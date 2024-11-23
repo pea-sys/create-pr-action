@@ -26,7 +26,3 @@ jobs:
           git update-index --add --chmod=+x .github/scripts/bump.sh
           version="$(.github/scripts/bump.sh "${BUMP_LEVEL}")"
           gh release create "${version}" --title "${version}" --generate-notes
-
-branding:
-  color: green
-  icon: shield
